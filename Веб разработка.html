@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-разработка</title>
+    <link rel="icon" href="https://avatars.mds.yandex.net/i?id=9d29c70ebf3f7c11415e31adb4a219c8d47f09f9-5697688-images-thumbs&n=13" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+        header {
+            background-image: url('https://i.pinimg.com/originals/23/9c/2e/239c2e893341bac88204577b489efc4b.jpg');
+            height: 200px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 100%;
+        }
+        .content {
+            background-image: url('https://i.pinimg.com/originals/b8/30/e9/b830e98cc5f39dac984b0142d5566157.jpg'); 
+            background-size: cover;
+            padding: 20px;
+            min-height: 900px;
+            position: relative;
+
+        }
+        .transition {
+            background-image: url('https://avatars.mds.yandex.net/i?id=c119def4c5a6915c88573ab6b6e5c2562665a86b-9242319-images-thumbs&ref=rim&n=33&w=480&h=191'); 
+            background-size: cover;
+            padding: 10px;
+            min-height: 50px;
+            position: relative;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 80px; /* Настройте по вашему усмотрению */
+            left: 50px; /* Настройте по вашему усмотрению */
+            color: black;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            max-width: 93%;
+            font-size: 20px;
+             }
+          .text-overlay2 {
+            position: absolute;
+            top: 80px; /* Настройте по вашему усмотрению */
+            left: 50px; /* Настройте по вашему усмотрению */
+            color: black;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            max-width: 50%;
+            font-size: 20px;
+             }
+        .text-1 {
+            color: white  
+        }
+        .chapter1 {
+            background-image: url('https://yandex-images.clstorage.net/1R00lo322/f12d48RjAXS/tvJIUv-aR9qIG0WbJnxiDgEK5lV6H_KmbMX37crWVpslGvcO8eSPKEVuRrDUPL0obHIbRw4WNQSZjsMR0QqRQqDj3AMoC4fbzQmHCCD_ZgtSDbaT_onxq-Ia_rDRSQ6ELER8XPDzjr0XfFQgz3LtvaAwl5majTgUnVHCVkIcThz-8wobcYNCEQiLzl1rv2GLmEQmUeQYru9p2jM5E4iPzqBEcVG6NU8w0SYR58NxszOgsxbSlQi9mxTXyJCLmk3d-7fKmvkMDdgHBsjW7P6hihpCbtTl3O3kqZm9_hTOwEughr2bPXGD-Fru0GTNefw05H0Zl12JtBsUk4gbwpWE07Q7jJc6zI3YhUlGHqH5IgNTgKGa4VEoYK0cvbOXgIpD44g2GLx-QbcYrN0myDu8--i91tzahXgUHZ9F3MiXSVJ09cwUdsGP38DEQ1bov6kBns8qUqdV7Ofv23tymg6DheML_B-0fAcwXWncLIn7tPImvZoan8o90pxXSBbDHolS8_6BEDDJQRLBSQ8X7bCqStsKpFnpWa8s61c7shPACkpgTPdeO3xEPJjjEqQO9vU-pjgcV50JttIS2sfRwd6MGjxxSRY6iQZWj4wGUmj44gYXACJUY99paSjZfXJVzwaNZsP2X_XxBb7U7hhkSH3xOux_mNObinHb0xsB2kBeQ9q-84MTsgCAVoACh5qvsyKAVwziGWkcbOYtXDN6k4ZPCmaIe5GxfQa60u5Taca5fnusOZHdV4Y3VVxRiNaDXgOZtjaDF3jMTNWHhQmWZHEnip8EohroEyFob5h_cp1GRoUtzPWXfDrGPdzu1GPNuDb2rHkSWt_MtlAbmweTydOBljSzQVL_gs4QQk1Ok-W15UtTgqKRrB-kISmT930bS45EaMN_Hvl0jToQZlwoynS5dGm-E5ldS39XG9gBGcHejVo8NkBUP0QBkQeKQduv9-0EWsft3mAWJaCtHDx0Vc');
+            height: 50px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            text-align: left;
+        }
+        .nav {
+            font-size: 30px;
+        }
+        .main {
+            text-align: center
+        }
+        .additional {
+            position: absolute;
+            top: 300px; /* Настройте по вашему усмотрению */
+            left: 50px; /* Настройте по вашему усмотрению */
+            color: black;
+            background-color: rgb(197, 167, 253);
+            padding: 10px;
+            max-width: 50%;
+            font-size: 25px;
+            text-indent: 2em;
+        }
+        .additional2 {
+            position: absolute;
+            top: 300px; /* Настройте по вашему усмотрению */
+            left: 50px; /* Настройте по вашему усмотрению */
+            color: black;
+            background-color: rgb(197, 167, 253);
+            padding: 10px;
+            max-width: 50%;
+            font-size: 25px;
+            text-indent: 2em;
+        }
+        .additional3 {
+            position: absolute;
+            top: 550px; /* Настройте по вашему усмотрению */
+            left: 50px; /* Настройте по вашему усмотрению */
+            color: black;
+            background-color: rgb(197, 167, 253);
+            padding: 10px;
+            max-width: 50%;
+            font-size: 24px;
+        }
+        .topname {
+           position: absolute;
+            top: 750px; /* Настройте по вашему усмотрению */
+            left: 50px; /* Настройте по вашему усмотрению */
+            color: black;
+            background-color: rgb(253, 167, 249);
+            padding: 10px;
+            max-width: 93%;
+            font-size: 30px; 
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Веб-разработка</h1>
+    </header>
+    <header class="chapter1">
+        <h2>Веб-разработка</h2>
+    </header>
+    <h1 class="main">Содержание</h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="#section1">Что такое веб-разработка?</a></li>
+            <li><a href="#section2">Направления веб-разработки (Бэкенд)</a></li>
+            <li><a href="#section3">Направления веб-разработки (Фронтенд)</a></li>
+            <li><a href="#section4">Направления веб-разработки (Фулстек)</a></li>
+            <li><a href="#section5">Направления веб-разработки (Вёрстка)</a></li>
+        </ul>
+    </nav>
+    <div class="content" id="section1">
+        <div class="text-overlay">
+            <h2>Что же такое веб-разработка?</h2>
+            <p><b>Веб-разработка</b> — процесс создания сайтов и приложений, которые работают в интернете. Всё, что вы видите в браузере, — блоги, онлайн-магазины, соцсети и даже банковские сервисы — результат труда веб-разработчиков. Они создают сайты, веб-приложения и поддерживают их работоспособность.</p>
+        </div>
+        <div class="additional">
+        <p>В веб-разработке используют множество технологий и языков программирования, но чаще всего для клиентской части применяют HTML и CSS и JavaScript, а для серверной — Java и Python.</p>
+        <p>С их помощью веб-разработчики верстают сайты, анимируют их и прописывают скрипты, которые обрабатывают нажатие кнопок на сайте и поведение пользователей.</p>
+        </div>
+        <h1 class="topname">Веб-разработка — это большая область программирования, которая включает в себя несколько направлений. Разберём основные.</h1>
+        <img src="https://fb.ru/misc/i/gallery/32550/2610100.jpg" alt="Изображение 2" width="500px" height="325px"  style="position: absolute; top: 300px; left: 730px;">
+        
+        <img src="https://do3.pskgu.ru/pluginfile.php/1176218/course/overviewfiles/android1.png" alt="Изображение 2" width="80"  style="position: absolute; top: 90px; left: 530px;">
+    </div>
+
+    <div class="transition">
+        <div class="text-1">
+            <h2>Направления веб-разработки</h2>
+        </div> 
+        
+    </div>
+    <div class="content" id="section2"> 
+        <div class="text-overlay2">
+            <h2>Бэкенд-разработка</h2>
+            <p><b>Бэкенд</b> — это всё, что происходит «за кулисами» сайта. Пользователи не видят эту часть, но без неё сайт не будет работать. Бэкенд обеспечивает обработку запросов, управление данными и поддерживает безопасность.</p>
+        </div>
+        <div class="additional2">
+        <p>Например, вы заходите на сайт интернет-магазина, добавляете товар в корзину и оплачиваете покупку. Именно бэкенд-разработчики отвечают за то, чтобы информация о товаре сохранилась, сумма списалась, а заказ отобразился у менеджера магазина.</p>
+        </div>
+         <div class="additional3">
+            <h4>Основные задачи бэкенд-разработчиков:</h4>
+        <ul><li>создание серверной логики, которая обрабатывает действия пользователя на сайте;</li></ul>
+        <ul><li>подключение и настройка баз данных, например MySQL или PostgreSQL;</li></ul>
+        <ul><li>разработка API, с помощью которых сайт может передавать информацию другим сервисам, например платёжным системам.</li></ul>  
+         </div>
+        <img src="https://avatars.mds.yandex.net/i?id=87b52fd1da5af57fba9117502db7929582a0fde5-11397886-images-thumbs&n=13" alt="Изображение 3" width="480" height="215px" style="position: absolute; top: 80px; left: 730px;">
+        <img src="https://avatars.mds.yandex.net/i?id=009c15f9601b7b5f68f3139b62e3beda_l-5232617-images-thumbs&n=13" alt="Изображение 4" width="480" height="245px" style="position: absolute; top: 300px; left: 730px;">
+        <img src="https://avatars.mds.yandex.net/i?id=3497e61db65b82fe829ee71b876fbd8b_l-8231357-images-thumbs&n=13" alt="Изображение 5" width="480" height="375px" style="position: absolute; top: 550px; left: 730px;">
+    
+    </div>
+    <div class="transition">
+        <div class="text-1">
+            <h2>Направления веб-разработки</h2>
+        </div>
+    </div>
+
+    <div class="content" id="section3">
+        <div class="text-overlay">
+            <h2>Фронтенд-разработка</h2>
+            <p><b>Фронтенд</b> — это «лицо» сайта, то, что видит и с чем взаимодействует пользователь. Кнопки, меню, текст, анимации — всё это работа фронтенд-разработчика.</p>
+        </div>
+        <div class="additional2">
+        <h4>Основные задачи фронтенд-разработчиков:</h4>
+<ul><li>разработка пользовательского интерфейса, включая анимации, всплывающие окна и кнопки;</li></ul>
+<ul><li>адаптация сайта под экраны разных размеров — от телефона до компьютера;</li></ul>
+<ul><li>работа над производительностью, чтобы все анимации воспроизводились не только на мощных компьютерах, но и на слабеньких ноутбуках.</li></ul>
+        </div>
+        <div>
+            <img src="https://avatars.mds.yandex.net/i?id=b030262f6223458186f5d0efe8d0ed0c_l-4749053-images-thumbs&n=13" alt="Изображение 6" width="480" height="420px" style="position: absolute; top: 300px; left: 730px;">
+        </div>
+     </div>
+
+     <div class="transition">
+        <div class="text-1">
+            <h2>Направления веб-разработки</h2>
+        </div>
+    </div>
+
+    <div class="content" id="section4">
+        <div class="text-overlay">
+            <h2>Фулстек-разработка</h2>
+            <p>В больших компаниях за разработку фронтенда и бэкенда отвечают разные специалисты. Но в стартапах часто нет возможности нанимать много сотрудников, поэтому задачи бэкендера и фронтендера может выполнять один человек — <b>фулстек-разработчик.</b></p>
+        </div>
+        <div>
+            <img src="https://avatars.mds.yandex.net/i?id=208428616cb469d33e8ca3f29c36062c-4915723-images-thumbs&n=13" alt="Изображение 7" width="1190" height="620px" style="position: absolute; top: 300px; left: 50px;">
+        </div>
+    </div>
+
+        <div class="transition">
+        <div class="text-1">
+            <h2>Направления веб-разработки</h2>
+        </div>
+    </div>
+
+    <div class="content" id="section5">
+        <div class="text-overlay">
+            <h2>Вёрстка</h2>
+            <p><b>Вёрстка</b> — это создание веб-страницы по дизайн-макету при помощи кода. В больших компаниях этим занимается отдельный сотрудник — верстальщик. После него проект передают фронтендерам, которые уже реализуют более сложные задачи: связывают пользовательский интерфейс с бэкендом, добавляют анимации и занимаются адаптацией сайта для разных устройств.</p>
+            <p>В своей работе верстальщики обычно используют HTML, CSS и иногда JavaScript. Для некоторых проектов, например лендингов, вообще не нужен фронтенд-разработчик, и со всеми задачами может справиться верстальщик.</p>
+        </div>
+        <div>
+            <img src="https://avatars.mds.yandex.net/i?id=544243fc2d6468d712125305cbf5bd31_l-5367231-images-thumbs&n=13" alt="Изображение 8" width="1190" height="520px" style="position: absolute; top: 380px; left: 50px;">
+        </div>
+        
+    
+</body>
+</html>
